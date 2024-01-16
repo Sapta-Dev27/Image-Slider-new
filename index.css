@@ -1,0 +1,200 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.950);
+    font-family: Poppins;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 25px 25px;
+    margin: 10px 10px;
+}
+
+.card-1 {
+    width: 250px;
+    height: 250px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+    margin: 25px 25px;
+}
+.card-2 {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+.card-3 {
+    width: 250px;
+    height: 250px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    margin: 25px 25px;
+    /* Remove this if you don't want the 3D effect */
+}
+.card-4 {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+.card-5 {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+.card-6{
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+.card-7 {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+.card-8 {
+    width: 250px;
+    height: 250px;
+    margin: 25px 25px;
+    border: 1.5px solid aqua;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px aqua;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card-1:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-2:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-3:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-4:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-5:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-6:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-7:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-8:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.card-front-side,
+.card-back-side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-front-side {
+    height: 250px;
+    width: 250px;
+}
+
+.card-front-side img {
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Style the back side */
+.card-back-side {
+    height: 225px;
+    width: 225px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.200);
+    font-family: Poppins;
+    font-size: 0.7rem;
+    color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 15px;
+    transform: rotateY(180deg);
+}
+.btn{
+      height:20px;
+      width: 80px;
+      font-size: 0.6rem;
+      border-radius: 5px ;
+      background-color: aqua;
+      color: black;
+      margin-left: 50px;
+      margin-top: 10px;
+      padding: 2.5px 2.5px;
+      font-family: Poppins;
+}
+@media  ( max-width:500px ) {
+    .container{
+        display:flex;
+        flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 25px 25px;
+            margin: 10px 10px;
+        }
+    }
